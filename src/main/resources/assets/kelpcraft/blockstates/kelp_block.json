@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "kelpcraft:block/kelp_block" }
+  }
+}

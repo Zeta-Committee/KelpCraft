@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "decay:kelp"
+    }
+  },
+  "result": {
+    "item": "kelpcraft:kelp_block",
+    "count": 1
+  }
+}

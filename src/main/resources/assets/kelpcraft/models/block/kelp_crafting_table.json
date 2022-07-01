@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "kelpcraft:block/kelp_crafting_table_front",
+    "up": "kelpcraft:block/kelp_crafting_table_top",
+    "down": "kelpcraft:block/kelp_under",
+    "north": "kelpcraft:block/kelp_crafting_table_front",
+    "south": "kelpcraft:block/kelp_crafting_table_side",
+    "west": "kelpcraft:block/kelp_crafting_table_front",
+    "east": "kelpcraft:block/kelp_crafting_table_side"
+  }
+}
