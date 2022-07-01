@@ -1,2 +1,2 @@
-# KelpCraft
-Add some tools made of kelp.
+# Kelp Craft
+* Add some tools made of kelp.
