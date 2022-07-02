@@ -1,17 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "## ",
-    "## ",
-    "   "
+    " ##",
+    " *#",
+    " * "
   ],
   "key": {
     "#": {
+      "item": "kelpcraft:kelp_block"
+    },
+    "*": {
       "item": "minecraft:kelp"
     }
   },
   "result": {
-    "item": "kelpcraft:kelp_block",
+    "item": "kelpcraft:kelp_axe",
     "count": 1
   }
 }

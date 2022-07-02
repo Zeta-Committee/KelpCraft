@@ -1,4 +1,9 @@
 {
   "block.kelpcraft.kelp_block": "Kelp Block",
-  "block.kelpcraft.kelp_crafting_table": "Kelp Crafting Table"
+  "block.kelpcraft.kelp_crafting_table": "Kelp Crafting Table",
+  "item.kelpcraft.kelp_sword": "Kelp Sword",
+  "item.kelpcraft.kelp_shovel": "Kelp Shovel",
+  "item.kelpcraft.kelp_pickaxe": "Kelp Pickaxe",
+  "item.kelpcraft.kelp_axe": "Kelp Axe",
+  "item.kelpcraft.kelp_hoe": "Kelp Hoe"
 }

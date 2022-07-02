@@ -23,7 +23,7 @@ public class CraftingContainer extends WorkbenchContainer {
         return callable.evaluate(
                 ((level, position)->
                         (level.getBlockState(position).getBlock().is(craftingTable)) &&
-                        (player.distanceToSqr(position.getX()+0.5D, position.getY()+0.5D, position.getZ()+0.5D) <= 6))
+                        (player.distanceToSqr(position.getX()+0.5D, position.getY()+0.5D, position.getZ()+0.5D) <= 48))
         ).get();
     }
 

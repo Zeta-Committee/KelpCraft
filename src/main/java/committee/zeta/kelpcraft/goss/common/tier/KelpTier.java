@@ -12,7 +12,7 @@ import java.util.function.Supplier;
  */
 
 public enum KelpTier implements IItemTier {
-    KELP(0, 50, 2.5F, 0.1F, 15, () -> {
+    KELP(0, 25, 2.5F, 0.0F, 13, () -> {
         return Ingredient.of(ItemTags.PLANKS);
     });
 

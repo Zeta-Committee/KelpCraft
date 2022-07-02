@@ -2,16 +2,19 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "## ",
-    "## ",
-    "   "
+    " * ",
+    " * "
   ],
   "key": {
     "#": {
-      "item": "decay:kelp"
+      "item": "kelpcraft:kelp_block"
+    },
+    "*": {
+      "item": "minecraft:kelp"
     }
   },
   "result": {
-    "item": "kelpcraft:kelp_block",
+    "item": "kelpcraft:kelp_hoe",
     "count": 1
   }
 }
