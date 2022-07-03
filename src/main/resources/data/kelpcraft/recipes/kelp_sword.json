@@ -10,7 +10,7 @@
       "item": "kelpcraft:kelp_block"
     },
     "*": {
-      "item": "minecraft:kelp"
+      "tag": "forge:items/kelp"
     }
   },
   "result": {

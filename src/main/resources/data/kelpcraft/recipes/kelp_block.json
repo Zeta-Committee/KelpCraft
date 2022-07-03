@@ -7,7 +7,7 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:kelp"
+      "tag": "forge:items/kelp"
     }
   },
   "result": {
