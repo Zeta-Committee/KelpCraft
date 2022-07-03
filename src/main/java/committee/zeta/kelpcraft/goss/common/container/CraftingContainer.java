@@ -1,34 +1,34 @@
 package committee.zeta.kelpcraft.goss.common.container;
 
-import net.minecraft.block.Block;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.inventory.container.WorkbenchContainer;
-import net.minecraft.util.IWorldPosCallable;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.inventory.ContainerLevelAccess;
+import net.minecraft.world.inventory.CraftingMenu;
 
 /**
  * @author GossChinese
  */
-public class CraftingContainer extends WorkbenchContainer {
+public class CraftingContainer extends CraftingMenu {
     private final Block workbench;
-    private final IWorldPosCallable callable;
+    private final ContainerLevelAccess callable;
 
-    public CraftingContainer(int id, PlayerInventory inventory, IWorldPosCallable callable, Block workbench) {
+    public CraftingContainer(int id, Inventory inventory, ContainerLevelAccess callable, Block workbench) {
         super(id, inventory, callable);
         this.workbench = workbench;
         this.callable = callable;
     }
 
-    protected static boolean isWithinUsableDistance(IWorldPosCallable callable, PlayerEntity player, Block craftingTable){
+    protected static boolean isWithinUsableDistance(ContainerLevelAccess callable, Player player, Block craftingTable){
         return callable.evaluate(
                 ((level, position)->
-                        (level.getBlockState(position).getBlock().is(craftingTable)) &&
+                        (level.getBlockState(position).getBlock().equals(craftingTable)) &&
                         (player.distanceToSqr(position.getX()+0.5D, position.getY()+0.5D, position.getZ()+0.5D) <= 48))
         ).get();
     }
 
     @Override
-    public boolean stillValid(PlayerEntity player) {
+    public boolean stillValid(Player player) {
         return CraftingContainer.isWithinUsableDistance(this.callable, player, this.workbench);
     }
 }
